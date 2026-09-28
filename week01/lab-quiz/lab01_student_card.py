@@ -1,5 +1,5 @@
 name = input("enter your full name:")
-sudent_id =input ("enter your full student ID:")
+student_id =input ("enter your full student ID:")
 department = input ("enter your department :")
 github_username = input ( "enter your github username :")
 programming_goal = input("enter one programming goal:")
