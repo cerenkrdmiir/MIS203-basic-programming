@@ -19,3 +19,5 @@
 * **Prompt Used:** Write a Python program named grade_calculator.py using an infinite while loop that calculates student letter grades and average scores.
 * **What did you change?** I adjusted the input prompt messages and score validation logic to strictly match the assignment instructions and formatting requirements.
 * **What does break do in your program?** When the user enters the letter 'q', it exits the while loop; this stops data entry and displays the previous statistics on the screen.
+
+* 
