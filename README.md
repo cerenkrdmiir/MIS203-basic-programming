@@ -35,3 +35,21 @@
 ## Concept Explanations
 1. **`input()` function:** Reads user input from the terminal/console as a string and stores it in a variable for later use.
 2. **`print()` function:** Outputs formatted text, variables, or `f-strings` to the terminal/console screen for the user to see.
+
+
+# Week 2 Lab Quiz: Two-Item Purchase Quote
+
+## Testing Summary
+- **Test Executed:** Tested the program using the required test case (2 x 50 TRY and 1 x 80 TRY, delivery fee: 20 TRY, tax: 10%).
+  - Line 1: 2 x 50.00 = 100.00 TRY
+  - Line 2: 1 x 80.00 = 80.00 TRY
+  - Subtotal: 180.00 TRY
+  - Tax (10%): 18.00 TRY
+  - Delivery Fee: 20.00 TRY
+  - **Final Total:** 218.00 TRY (Verified against expected value).
+- **Change Made After Testing:** Applied `:.2f` formatting to all monetary outputs to guarantee two decimal places for all amounts.
+- **Error/Boundary Testing (Stretch Task):** Tried typing alphabetical characters (e.g., `"two"`) for the quantity input. The program raised a `ValueError` and stopped execution.
+- **Future Improvement:** Incorporate input validation loops or `try-except` blocks to handle invalid non-numeric entries gracefully.
+
+## Concept Explanation
+- **Why `input()` must be converted:** The `input()` function in Python always stores user input as a string data type (`str`). Mathematical operators cannot perform numeric arithmetic on strings directly. Converting inputs using `int()` for quantities and `float()` for prices and fees casts these inputs into numerical data types, enabling arithmetic operations.
