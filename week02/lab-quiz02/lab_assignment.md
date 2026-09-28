@@ -17,7 +17,7 @@ tax_amount = subtotal * (tax_percent / 100)
 final_total = subtotal + tax_amount + delivery_fee
 
 print("\n" + "="*40)
-print("          PURCHASE QUOTE SUMMARY          ")
+print("   PURCHASE QUOTE SUMMARY    ")
 print("="*40)
 print(f"Item 1 ({item1_name}): {item1_qty} x {item1_price:.2f} = {line1_total:.2f} TRY")
 print(f"Item 2 ({item2_name}): {item2_qty} x {item2_price:.2f} = {line2_total:.2f} TRY")
