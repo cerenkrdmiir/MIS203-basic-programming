@@ -1,29 +1,21 @@
-# lab02_purchase_quote.py
-
-# Item 1 Inputs
 item1_name = input("Enter first item name: ").strip()
 item1_qty = int(input("Enter first item quantity: "))
 item1_price = float(input("Enter first item unit price: "))
 
-# Item 2 Inputs
 item2_name = input("Enter second item name: ").strip()
 item2_qty = int(input("Enter second item quantity: "))
 item2_price = float(input("Enter second item unit price: "))
 
-# Delivery Fee and Tax Percentage Inputs
 delivery_fee = float(input("Enter delivery fee: "))
 tax_percent = float(input("Enter tax percentage (0-100): "))
 
-# Line Calculations
 line1_total = item1_qty * item1_price
 line2_total = item2_qty * item2_price
 subtotal = line1_total + line2_total
 
-# Tax and Final Total Calculations
 tax_amount = subtotal * (tax_percent / 100)
 final_total = subtotal + tax_amount + delivery_fee
 
-# Output Formatting
 print("\n" + "="*40)
 print("          PURCHASE QUOTE SUMMARY          ")
 print("="*40)
