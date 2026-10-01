@@ -53,3 +53,16 @@
 
 ## Concept Explanation
 - **Why `input()` must be converted:** The `input()` function in Python always stores user input as a string data type (`str`). Mathematical operators cannot perform numeric arithmetic on strings directly. Converting inputs using `int()` for quantities and `float()` for prices and fees casts these inputs into numerical data types, enabling arithmetic operations.
+
+
+## Week 03
+
+- **AI Tool Used:** Gemini
+- **Prompt Used:** "Create a Python program named ticket_office.py that calculates cinema ticket prices based on age, day, and student status..."
+- **What did you change?:** I adjusted the order of condition checks and formatted the floating-point numbers for exact output matching.
+- **Tests:**
+  1. Input: Age 5 (Weekend) -> Result: 0.00 TRY (Free)
+  2. Input: Age 20, Student Yes (Weekday) -> Result: 140.00 TRY (Student)
+  3. Input: Age 65 (Weekday) -> Result: 100.00 TRY (Senior)
+- **Why does the order of the rules matter?:**
+  If the student rule came before the child rule, a 10-year-old student would receive only a 30% student discount instead of the 40% child discount they are eligible for. The order ensures customers get the highest prioritized discount intended for their group.
